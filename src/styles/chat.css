@@ -1,0 +1,49 @@
+.asideRight__chat__output {
+  display: flex;
+  flex-direction: column-reverse;
+  height: 210px;
+  overflow: scroll;
+  /* width: 16.5vw; */
+  word-wrap: break-word;
+  overflow-x: hidden;
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+  margin: 1%;
+}
+
+.asideRight__chat__output p {
+  margin: 0.5rem;
+}
+
+.asideRight__chat__output p:nth-child(even){
+  background-color: #dddddd;
+}
+
+.btn {
+  border: none;
+  background-color: inherit;
+  padding: 0;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.btn:hover {
+  color: red;
+}
+
+.delete-btn {
+  text-decoration: underline;
+}
+
+.asideRight__chat__input{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.chatButton{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2%;
+}

@@ -1,0 +1,325 @@
+@import './chat.css';
+@import url('https://fonts.googleapis.com/css2?family=Alegreya+SC:wght@500&family=Alegreya+Sans+SC:wght@300&display=swap');
+
+
+body{
+ background-color: dimgray;
+
+}
+h1,h2,h3,h4,h5,h6{
+  font-family:  'Alegreya Sans SC', sans-serif;
+  letter-spacing: 2px;
+}
+
+h6{
+  margin: 1;
+}
+
+h2,
+footer {
+  text-align: center;
+}
+h4{
+    text-align: center;
+}
+
+header {
+  border-bottom: 2px solid black;
+  text-align: center;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.5);
+  background-color: whitesmoke;
+}
+
+
+.mainBody {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.eventCardFriend {
+    background-color: cornsilk;
+}
+
+.asideLeft {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  
+  /* justify-content: center; */
+}
+
+.centerBody {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.asideRight {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+
+.asideLeft__user,
+.asideLeft__weather,
+.asideLeft__taskList,
+.asideLeft__eventList {
+  border: 2px black solid;
+  margin: 2%;
+  border-radius: 2%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+  background-color: whitesmoke;
+}
+
+.centerBody__create,
+.centerBody__mainFeed {
+  border: 2px black solid;
+  margin: 2%;
+ padding: 10px;
+ border-radius: 1%;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+ background-color: whitesmoke;
+}
+.centerBody__create{
+  border-radius: 5px;
+}
+
+.asideRight__friendsList,
+.asideRight__chat {
+  border: 2px black solid;
+  margin: 2%;
+  min-height: 350px;
+  border-radius: 1%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+  background-color: whitesmoke;
+}
+
+.centerBody__create-Buttons {
+  display: flex;
+  justify-content: space-between;
+  margin: 5%;
+  border-top: 2px black solid;
+  padding-top: 5px;
+  /* margin-bottom: auto; */
+}
+
+.centerBody__create-submit {
+  display: flex;
+  justify-content: center;
+  margin: 1%;
+}
+
+.centerBody__mainFeed {
+  display: flex;
+ 
+/* min-width:723.84px; */
+  min-height: 500px;
+  
+}
+
+.centerBody__eventFeed {
+  border-right: 2px solid black;
+  padding: 10px;
+  width: 50%;
+}
+
+
+.eventFeed {
+  margin-top: 10px;
+}
+
+
+
+.newsFeed {
+  margin-top: 10px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.centerBody__mainFeed {
+  height: 50vh;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.hide {
+  display: none;
+}
+.centerBody__mainFeed{
+    height: 50vh;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.articleCard{
+    display: flex;
+	/* flex: 1; */
+	flex-wrap: wrap;
+	flex-direction: column;
+    border: 2px inset black;
+    margin: 1%;
+    margin-left: 10%;
+    justify-content: center;
+    border-radius: 2%;
+    text-align: center;
+    
+    background:radial-gradient(transparent 0%, rgb(189, 189, 189) 100%) ;
+}
+
+.centerBody__newsFeed{
+    /* min-width: 350px; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    padding: 10px;
+    width: 50%;
+}
+
+.delete{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2%;
+}
+
+.weatherDay{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.friendsPost{
+  background:radial-gradient(transparent 0%, cornsilk 100%) ;
+  font-style: italic;
+  border-radius: 2%;
+}
+
+
+.eventCard, .eventCardFriend{
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  text-align: center;
+  margin: 2%;
+  border-radius: 2%;
+}
+
+.eventCard{
+  background:radial-gradient(transparent 0%, rgb(189, 189, 189) 100%) ;
+}
+.nonOffensive{
+  background:radial-gradient(transparent 40%, paleturquoise 120%) ;
+  border-radius: 2%;
+ }
+
+.eventCardFriend{
+  font-style: italic;
+}
+
+.taskDelete{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1%;
+}
+
+.taskCard{
+  border-top: 2px solid black;
+  margin: 3%;
+}
+
+.deleteEvent, .eventWeather{
+  margin: 1%;
+}
+
+.logo{
+  width: 100px;
+  height: 75px;
+}
+
+.logoHeader{
+  display: flex;
+  justify-content: start;
+}
+
+.title{
+  margin-bottom: 0;
+  margin-top: 48px;
+  margin-right: 20px;
+}
+
+
+.auth{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  top:32%;
+  left:33%;
+  border: 2px solid black;
+  padding: 75px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.5);
+
+
+}
+footer{
+  position: static;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.loginDiv{
+  display: flex;
+  height: 50vh;
+}
+.login{
+  display: flex;
+  flex-direction: column;
+}
+
+.loginButton, .registerButton{
+  margin-top: 1%;
+}
+
+.logoLogin{
+  position: fixed;
+  width: 100px;
+  height: 75px;
+left: 46%;
+bottom: 25%;
+}
+
+.userPicture{
+  width: 90px;
+  height: 120px;
+}
+
+.userDisplay{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.userPictureDiv{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.weatherIcon{
+  background-color: dimgray;
+  border-radius: 50%;
+}
+
+.eventButtons{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 2%;
+}
+
+.eventWeatherButtonDiv{
+  display: flex;
+  justify-content: center;
+  margin: 2%;
+}
